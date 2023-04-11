@@ -24,7 +24,9 @@ const productApi = createApi({
         url: "products",
         method: "POST",
         body: data1,
-
+        headers: {
+          "Content-type": "application/json",
+        },
       }),
       invalidatesTags: ["MenuItems"],
     }),
