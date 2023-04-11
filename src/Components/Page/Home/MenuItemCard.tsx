@@ -28,7 +28,7 @@ function MenuItemCard(props: Props) {
           <div className="row col-10 offset-1 p-4">
             <Link to={`/menuItemDetails/${props.menuItem.id}`}>
               <img
-                src={props.menuItem.image}
+                src={props.menuItem.imageUrl}
                 style={{ borderRadius: "50%" }}
                 alt=""
                 className="w-100 mt-5 image-box"
@@ -76,7 +76,7 @@ function MenuItemCard(props: Props) {
               </Link>
             </p>
             <p className="badge bg-secondary" style={{ fontSize: "12px" }}>
-              {props.menuItem.category}
+              {props.menuItem.categoryName}
             </p>
           </div>
           <p

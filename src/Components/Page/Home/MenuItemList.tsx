@@ -42,8 +42,8 @@ function MenuItemList() {
       setMenuItems(data.result);
       const tempCategoryList = ["All"];
       data.result.forEach((item: menuItemModel) => {
-        if (tempCategoryList.indexOf(item.category) === -1) {
-          tempCategoryList.push(item.category);
+        if (tempCategoryList.indexOf(item.categoryName) === -1) {
+          tempCategoryList.push(item.categoryName);
         }
       });
 
@@ -91,7 +91,7 @@ function MenuItemList() {
         ? [...data.result]
         : data.result.filter(
             (item: menuItemModel) =>
-              item.category.toUpperCase() === category.toUpperCase()
+              item.categoryName.toUpperCase() === category.toUpperCase()
           );
 
     //search functionality

@@ -42,9 +42,9 @@ function MenuItemList() {
               Add New Menu Item
             </button>
           </div>
-          <div className="bg-danger form-control text-center text-white h4">
+          {/* <div className="bg-danger form-control text-center text-white h4">
             In demo, you will not be able to create/update or delete Menu Items!
-          </div>
+          </div> */}
           <div className="p-2">
             <div className="row border">
               <div className="col-1">Image</div>
@@ -61,23 +61,23 @@ function MenuItemList() {
                 <div className="row border" key={menuItem.id}>
                   <div className="col-1">
                     <img
-                      src={menuItem.image}
+                      src={menuItem.imageUrl}
                       alt="no content"
                       style={{ width: "100%", maxWidth: "120px" }}
                     />
                   </div>
                   <div className="col-1">{menuItem.id}</div>
                   <div className="col-2">{menuItem.name}</div>
-                  <div className="col-2">{menuItem.category}</div>
+                  <div className="col-2">{menuItem.categoryName}</div>
                   <div className="col-1">${menuItem.price}</div>
                   <div className="col-2">{menuItem.specialTag}</div>
                   <div className="col-3">
                     <button className="btn btn-success">
                       <i
                         className="bi bi-pencil-fill"
-                        onClick={() =>
-                          navigate("/menuitem/menuitemupsert/" + menuItem.id)
-                        }
+                        // onClick={() =>
+                        //   navigate("/menuitem/menuitemupsert/" + menuItem.id)
+                        // }
                       ></i>
                     </button>
                     <button

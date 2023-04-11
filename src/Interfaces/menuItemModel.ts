@@ -3,7 +3,7 @@ export default interface menuItemModel {
   name: string;
   description: string;
   specialTag: string;
-  category: string;
+  categoryName: string;
   price: number;
-  image: string;
+  imageUrl: string;
 }
