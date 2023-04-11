@@ -30,7 +30,7 @@ function Banner() {
             }}
             value={value}
             onChange={handleChange}
-            placeholder="Search for Food Items!"
+            placeholder="Search for Items!"
           />
           <span style={{ position: "relative", left: "-43px" }}>
             <i className="bi bi-search"></i>
