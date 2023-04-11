@@ -22,7 +22,7 @@ import { RootState } from "../Storage/Redux/store";
 
 function App() {
   const dispatch = useDispatch();
-  const [skip, setSkip] = useState(true);
+  const [, setSkip] = useState(true);
   const userData = useSelector((state: RootState) => state.userAuthStore);
 
   useEffect(() => {

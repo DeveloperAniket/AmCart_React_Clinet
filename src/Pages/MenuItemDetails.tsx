@@ -4,18 +4,18 @@ import { useGetProductByIdQuery } from "../Apis/menuItemApi";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { MainLoader, MiniLoader } from "../Components/Page/Common";
-import { apiResponse, userModel } from "../Interfaces";
-import { toastNotify } from "../Helper";
-import { RootState } from "../Storage/Redux/store";
-import { useSelector } from "react-redux";
+// import {  userModel } from "../Interfaces";
+ 
+// import { RootState } from "../Storage/Redux/store";
+// import { useSelector } from "react-redux";
 function MenuItemDetails() {
   const { menuItemId } = useParams();
-  const { data, isLoading } = useGetProductByIdQuery(menuItemId);
+  const { data } = useGetProductByIdQuery(menuItemId);
   const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
-  const userData: userModel = useSelector(
-    (state: RootState) => state.userAuthStore
-  );
+  // const userData: userModel = useSelector(
+  //   (state: RootState) => state.userAuthStore
+  // );
 
   const handleQuantity = (counter: number) => {
     let newQuantity = quantity + counter;

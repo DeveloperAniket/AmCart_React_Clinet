@@ -1,20 +1,20 @@
-import React from "react";
+ 
 import {  menuItemModel, userModel } from "../../../Interfaces";
 import { Link } from "react-router-dom";
  
-import { RootState } from "../../../Storage/Redux/store";
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+// import { RootState } from "../../../Storage/Redux/store";
+// import { useSelector } from "react-redux";
+// import { useNavigate } from "react-router-dom";
 
 interface Props {
   menuItem: menuItemModel;
 }
 
 function MenuItemCard(props: Props) {
-  const navigate = useNavigate();
-  const userData: userModel = useSelector(
-    (state: RootState) => state.userAuthStore
-  );
+  // const navigate = useNavigate();
+  // const userData: userModel = useSelector(
+  //   (state: RootState) => state.userAuthStore
+  // );
 
  
 

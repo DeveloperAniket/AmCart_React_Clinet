@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { userModel } from "../../Interfaces";
 import { useSelector, useDispatch } from "react-redux";
@@ -31,7 +30,7 @@ function Header() {
       <nav className="navbar navbar-expand-lg bg-light navbar-light">
         <div className="container-fluid">
           <NavLink className="nav-link" aria-current="page" to="/">
-            <img src={logo} style={{ height: "40px" }} className="m-1" />
+            <img alt="description of image" src={logo} style={{ height: "40px" }} className="m-1" />
           </NavLink>
           <button
             className="navbar-toggler"
